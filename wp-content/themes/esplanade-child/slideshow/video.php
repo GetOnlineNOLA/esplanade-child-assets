@@ -1,0 +1,1 @@
+<?php echo do_shortcode(get_field('video_slideshow_shortcode')); ?>

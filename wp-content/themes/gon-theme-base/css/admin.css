@@ -1,0 +1,16 @@
+@charset "UTF-8";
+/* CSS Document */
+/*.acf-repeater > table .collapse{width:5%!important;overflow:auto;}
+.acf-repeater > table .thin-collapse{width:1%!important;overflow:auto;}*/
+.acf-row-handle,.acf-fields.-left{border-width:0 0.5em;
+    border-style: solid;
+    -webkit-border-image: 
+      -webkit-gradient(linear, 0 0, 0 100%, from(#2193a5), to(rgba(0, 0, 0, 0))) 1 100%;
+    -webkit-border-image: 
+      -webkit-linear-gradient(#2193a5, rgba(0, 0, 0, 0)) 1 100%;
+    -moz-border-image:
+      -moz-linear-gradient(#2193a5, rgba(0, 0, 0, 0)) 1 100%;    
+    -o-border-image:
+      -o-linear-gradient(#2193a5, rgba(0, 0, 0, 0)) 1 100%;
+    border-image:
+      linear-gradient(to bottom, #2193a5, rgba(0, 0, 0, 0)) 1 100%;}

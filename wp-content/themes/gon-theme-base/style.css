@@ -1,0 +1,234 @@
+/*
+Theme Name: Theme Base
+Theme URI: https://getonlinenola.com
+Author: Faudo
+Author URI: http://getonlinenola.com/
+Description: This is a base theme designed to be used in tandem with Get Online Nola child themes. Designed and developed for GetOnlineNOLA by <a href="http://faudo.com">Faudo</a>
+gon-theme-base is distributed under the terms of the GNU GPL
+*/
+
+/*/////////////*/
+/*/////////////*/
+/*general styles*/
+/*/////////////*/
+/*/////////////*/
+.clearfix{clear:both;}
+body {font-size: 18px;}
+p, a, li {}
+.entry-content p {margin-bottom: 10px;}
+h1.entry-title,h1,h2,h3,h4 {padding: 0; margin: .25em 0;line-height: 1.25;}
+h1.entry-title {font-size: 2.25em;text-align: center;}
+h1 {font-size: 2em;}
+h2 {font-size:1.75em;}
+h3 {font-size:1.5em;}
+h4 {font-size:1.25em;}
+blockquote {border-left: 4px solid;padding: 0 0 0 1em;background: transparent;}
+blockquote:before {margin: 0;}
+ol { counter-reset: item; }
+ol li { display: block; }
+ol li:before {
+  content: counter(item) ". ";
+  counter-increment: item;
+  font-weight: bold;
+}
+.entry-content ol {margin-left: 1%;}
+.entry-content ul {list-style: none;margin-left: 20px;}
+.entry-content li {line-height: 1.5;}
+.entry-content ol, .entry-content ul {padding-bottom: 10px;}
+.entry-content ul li {position: relative;}
+.entry-content ul li:before {
+	content: '\2022';
+	font-size: 21px;
+	position: absolute;
+	left: -15px;
+	top: -1px;
+}
+.entry-content h2.entry-title>a {text-decoration: none;}
+a.button,
+input[type="submit"] {
+    display: inline-block;
+    padding: 10px 40px;
+    border: 2px solid;
+    border-radius: 20px;
+    text-transform: inherit;
+    font-weight: inherit;
+    -webkit-appearance: none;
+    color: inherit;
+    background: transparent;
+    width: auto;
+    box-shadow: none;
+}
+a.button:hover,
+input[type="submit"]:hover {
+    background: rgba(0,0,0,0.15);
+}
+#sidebar input[type="submit"] {
+    width: 100%;
+    margin-top: .25em;
+    padding: 5px 30px;
+}
+.content-wrapper {padding: 20px 0;}
+#sidebar {padding: 30px 0;}
+
+
+/*/////////////*/
+/*/////////////*/
+/*contact page styles*/
+/*/////////////*/
+/*/////////////*/
+input, button, select, textarea {margin-top: 0;}
+#contact-page-template iframe {height: 300px;max-width: 100%;width: 100%;margin: .5em 0 1em;}
+div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {margin: 10px 0;}
+input.wpcf7-submit {width: 100%;}
+
+/*/////////////*/
+/*/////////////*/
+/*footer styles*/
+/*/////////////*/
+/*/////////////*/
+footer {padding: 30px 0;border-top: 3px solid;}
+#copyright {padding: 15px 0;text-align: center;font-size: .8em;}
+#callout {text-align: center;display: block;}
+#callout img {opacity: .6;}
+#callout img:hover {opacity: 1;}
+
+/*/////////////*/
+/*/////////////*/
+/*blog styles*/
+/*/////////////*/
+/*/////////////*/
+.post-meta {padding-bottom: 10px;opacity: .9;}
+a.read-more.button, a.button.back-to-index {display: block;text-align: center;width: 200px;margin: 10px auto;}
+#blog-single img.wp-post-image {margin-bottom: 10px;}
+#blog-archive img.wp-post-image {margin: 2.5em 0 0!important;}
+.blog article.post, .archive article.post, .search article {margin-bottom: 2em;}
+
+/*/////////////*/
+/*/////////////*/
+/*shortcodes styles*/
+/*/////////////*/
+/*/////////////*/
+
+@keyframes jump {
+  0%   {transform: translateY(0);}
+  25%  {transform: translateY(-4px);}
+  50%  {transform: translateY(0);}
+  75%  {transform: translateY(-4px);}
+  100% {transform: translateY(0);}
+}
+
+@keyframes tilt {
+  0%   {transform: rotate(0);}
+  25%  {transform: rotate(30deg);}
+  100% {transform: rotate(0);}
+}
+
+.entry-content ul li.social-link {display: inline-block;text-align: center;}
+.entry-content ul li.social-link:before {display: none;}
+li.social-link a {transition: .3s all ease;}
+.opacity:hover {opacity: .7;}
+.jump:hover {animation: jump .5s ease;}
+.tilt:hover {animation: tilt .5s ease;}
+.grow:hover {transform:scale(1.3);}
+
+.entry-content ul li.social-link.standard .fa {background-color: transparent!important;}
+
+
+.fa-tripadvisor.native {color:#00af87;}
+.fa-facebook.native {color:#3b5998;}
+.fa-instagram.native {color:#517fa4;}
+.fa-twitter.native {color:#00aced;}
+.fa-houzz.native {color:#73ba37;}
+.fa-linkedin.native {color:#007bb6;}
+.fa-yelp.native {color:#c41200;}
+.fa-google-plus.native {color:#dd4b39;}
+.fa-youtube.native {color:#bb0000;}
+.fa-pinterest.native {color:#cb2027;}
+
+.fa-tripadvisor.native-bg {background-color:#00af87;}
+.fa-facebook.native-bg {background-color:#3b5998;}
+.fa-instagram.native-bg {background-color:#517fa4;}
+.fa-twitter.native-bg {background-color:#00aced;}
+.fa-houzz.native-bg {background-color:#73ba37;}
+.fa-linkedin.native-bg {background-color:#007bb6;}
+.fa-yelp.native-bg {background-color:#c41200;}
+.fa-google-plus.native-bg {background-color:#dd4b39;}
+.fa-youtube.native-bg {background-color:#bb0000;}
+.fa-pinterest.native-bg {background-color:#cb2027;}
+
+
+/*/////////////*/
+/*/////////////*/
+/*special styles*/
+/*/////////////*/
+/*/////////////*/
+
+
+
+/*/////////////*/
+/*/////////////*/
+/*media queries*/
+/*MOBILE FIRST*/
+/*/////////////*/
+/*/////////////*/
+
+
+/*iphone 4*/
+@media (min-width: 320px) {
+	
+}
+
+/*small phones*/
+@media (min-width: 375px) {
+
+}
+
+/*larger phones*/
+@media (min-width: 375px) {
+
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    #sidebar {
+        width: 50%;
+    }
+    #contact-page-template iframe {height: 400px;}
+
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+	/*general styles*/
+	.flex {display: flex;flex-direction: row;}
+    .flex-col {
+        display: flex;
+        flex-direction: column;
+    }
+    .flex-col.flex-top {justify-content: flex-start;}
+    .flex-col.flex-mid {justify-content: center;}
+    .flex-col.flex-bottom {justify-content: flex-end;}
+    .flex-col.flex-left {align-items: flex-start;}
+    .flex-col.flex-center {align-items: center;}
+    .flex-col.flex-right {align-items: flex-end;}
+
+    #sidebar {width: 100%;}
+
+    /*footer*/
+    #callout {text-align: right;padding-top: 30px;}
+    #copyright {text-align: left;padding-top: 30px;}
+
+
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+}
+
+

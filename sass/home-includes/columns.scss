@@ -1,0 +1,93 @@
+&.gon_columns-standard {
+	.home-column {
+		height: 100%;
+		background: $hc-background-color;
+		border: $hc-border-color solid $hc-border-width;
+		padding: $hc-padding;
+	}
+}
+
+
+&.gon_columns-expand {
+	.home-column {
+		background: $hc-background-color;
+		border: $hc-border-color solid $hc-border-width;
+		position: relative;
+		padding: $hc-padding;
+		.expand {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+		    width: 40px;
+		    height: 40px;
+		    font-size: 30px;
+		    padding: 6px 5px 5px 21px;
+			color: $hc-background-color;
+			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2989d8+0,2989d8+50,ffffff+50,ffffff+100 */
+			background: $hc-border-color; /* Old browsers */
+			background: -moz-linear-gradient(-45deg, $hc-background-color 0%, $hc-background-color 50%, $hc-border-color 50%, $hc-border-color 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(-45deg, $hc-background-color 0%,$hc-background-color 50%,$hc-border-color 50%,$hc-border-color 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(135deg, $hc-background-color 0%,$hc-background-color 50%,$hc-border-color 50%,$hc-border-color 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		}
+	}
+}
+
+&.gon_columns-full {
+	.home-column {
+		height: 100%;
+		border: $hc-border-color solid $hc-border-width;
+		padding: $hc-padding;
+		margin: 0 auto;
+		@include min481 {
+			width: 100%;
+			img,
+			.entry-content {
+				max-width: 50%;
+				margin: 0 auto;
+			}
+		}
+		@include min769 {
+			img,
+			.entry-content {
+				max-width: 100%;
+			}
+		}
+		&.hc1 {background-color: $hc-left-background-color;}
+		&.hc2 {background-color: $hc-middle-background-color;}
+		&.hc3 {background-color: $hc-right-background-color;}
+	}
+}
+
+
+&.gon_columns-overlay {
+	.home-column {
+		height: 100%;
+		border: $hc-border-color solid $hc-border-width;
+		background-size: cover;
+		.entry-content {
+			padding: $hc-padding;
+		}
+		.overlay {
+		    height: 100%;
+		    display: flex;
+		    flex-direction: column;
+		    > a {
+				margin-top: auto;
+			}
+		}
+		&.hc1 {
+			.overlay{background-color: $hc-left-background-overlay;}
+			h3 { background-color: $hc-header-left-background-color;}
+		}
+		&.hc2 {
+			.overlay{background-color: $hc-middle-background-overlay;}
+			h3 { background-color: $hc-header-middle-background-color;}
+		}
+		&.hc3 {
+			.overlay{background-color: $hc-right-background-overlay;}
+			h3 { background-color: $hc-header-right-background-color;}
+		}
+	}
+}
+
+

@@ -1,0 +1,242 @@
+///////////////////
+//THEME VARIABLES//
+///////////////////
+
+//use these as shortcuts or reminders of theme guidelines when filling out styles below
+
+$base-font-size: 16px;
+$mainfont: 'Open Sans';
+$headerfont: 'Libre Baskerville';
+$blue: #00263d;
+$grey: #666666;
+$darkgrey: #333333;
+$black: black;
+$white: white;
+
+//////////////////////////////////////////
+////////////////HEADER////////////////////
+//////////////////HEADER//////////////////
+////////////////////HEADER////////////////
+//////////////////////////////////////////
+$mobile-hamburger-color: $blue;
+
+//**STANDARD HEADER**// 
+$header-box-shadow: 0 0 5px rgba($black,.5);
+$header-background: $white;
+
+
+//main navigation menu ($mn)
+$mn-font: $headerfont;
+$mn-font-size: 19px;
+$mn-text-color: $blue;
+$mn-text-transform: none;
+$mn-border-top: 2px solid transparent;
+$mn-border-bottom: 2px solid transparent;
+$mn-spacing-x: 5px;
+$mn-spacing-y: 2px;
+//hover
+$mn-text-color-hover: $grey;
+$mn-decoration-hover: none;//either 'none' or 'underline'.
+$mn-background-color-hover: transparent;
+$mn-border-top-hover: 2px solid transparent;
+$mn-border-bottom-hover: 2px solid $grey;
+//active (styles for current menu item)
+$mn-active-text-color: $white;
+$mn-active-decoration: none;//either 'none' or 'underline'.
+$mn-active-background-color: $blue;
+$mn-active-border-top: transparent;
+$mn-active-border-bottom: transparent;
+
+
+//dropdown menu ($dd)
+$dd-background: $white;
+$dd-link-color: $blue;
+$dd-font-size: 16px;
+$dd-caret-color: $blue;//arrow next to dropdown link
+//hover
+$dd-hover-color: $grey;
+$dd-hover-decoration: none; //either 'none' or 'underline'.
+$dd-hover-background-color: $white;
+//active
+$dd-active-color: $white;
+$dd-active-decoration: none; //either 'none' or 'underline'.
+$dd-active-background-color: $grey;
+
+//header button
+$hb-text-color: white;
+$hb-font: $headerfont;
+$hb-font-size: 16px;
+$hb-background-color: $blue;
+$hb-border-color: $blue;
+$hb-box-shadow: none; // https://www.w3schools.com/cssref/css3_pr_box-shadow.asp
+//header button hover
+$hb-background-color-hover: $white;
+$hb-text-color-hover: $blue;
+$hb-border-color-hover: $blue;
+
+
+///////////////////////////////////////////////////
+/////////////////SAMPLE STYLES/////////////////////
+///////////////////SAMPLE STYLES///////////////////
+/////////////////////SAMPLE STYLES/////////////////
+///////////////////////////////////////////////////
+
+//fonts
+$header-font: $headerfont;
+$header-text-transform: none;
+$main-text-font: $mainfont;
+$h1-font-weight: 400;
+$h2-font-weight: 400;
+$h3-font-weight: 400;
+$h4-font-weight: 400;
+
+//text-color
+$h1-color: $blue;
+$h2-color: $grey;
+$h3-color: $blue;
+$h4-color: $grey;
+$main-text-color: $blue;
+$link-color: $grey;
+$link-decoration: underline; // either 'underline' or 'none'.
+$link-color-hover: $darkgrey;
+$link-decoration-hover: underline; // either 'underline' or 'none'.
+$ol-number-color: $blue; //numbered list - number color
+$ul-bullet-color: $blue; //bulleted list - bullet color
+
+//button ($bt)
+$bt-font: $headerfont;
+$bt-font-weight: 400;
+$bt-font-size: 20px;
+$bt-text-color: $blue;
+$bt-text-transform: none; //choose from 'uppercase', 'capitalize', 'lowercase', or 'none'.
+$bt-background-color: $white;
+$bt-padding: 5px 40px;
+$bt-border-width: 2px 4px;
+$bt-border-color: $blue;
+$bt-border-radius: 0px;
+$bt-box-shadow: none; // https://www.w3schools.com/cssref/css3_pr_box-shadow.asp
+//button hover
+$bt-background-color-hover: $white;
+$bt-text-color-hover: $grey;
+$bt-border-color-hover: $grey;
+
+//misc
+$blockquote-text-color: $blue;
+$blockquote-border-color: $blue;
+
+
+
+
+////////////////////////////////////////
+////////////////HOME////////////////////
+//////////////////HOME//////////////////
+////////////////////HOME////////////////
+////////////////////////////////////////
+
+//slideshow
+$ss-background-color: $blue;
+$ss-border-bottom: none;
+$ss-text-color: $white;
+$ss-font-size: 18px;
+$ss-text-padding: 20px;//this propertly controlls text in the colored band beleath the slideshow...
+//...or in the right colum of the tiled slideshow
+
+//**OVERLAY SLIDESHOW**//
+//**SWOOSH SLIDESHOW**//
+$overlay-large-text-color: $blue;
+$overlay-large-text-font-size: 30px;
+$overlay-large-text-transform: uppercase;//uppercase or lowercase
+
+
+//slideshow button
+$ss-bt-text-color: $white;
+$ss-bt-background-color: transparent;
+$ss-bt-border-color: $white;
+$ss-bt-box-shadow: none; // https://www.w3schools.com/cssref/css3_pr_box-shadow.asp
+//slideshow button hover
+$ss-bt-text-color-hover: $white;
+$ss-bt-background-color-hover: $white;
+$ss-bt-border-color-hover: $blue;
+$ss-bt-box-shadow-hover: none; // https://www.w3schools.com/cssref/css3_pr_box-shadow.asp
+
+//home copy
+$hcopy-text-color: $blue;
+$hcopy-font-size: 18px;
+
+//home columns
+$hc-background-color: $grey;
+$hc-border-color: $blue;
+$hc-border-width: 0px;
+$hc-header-color: $blue;
+$hc-header-background: transparent;
+$hc-padding: 10%;
+
+//**FULLWIDTH COLUMNS**//
+$hc-left-background-color: $grey;
+$hc-middle-background-color: #eee;
+$hc-right-background-color: $grey;
+
+//**OVERLAY COLUMNS**//
+$hc-left-background-overlay: rgba($blue,.5);
+$hc-middle-background-overlay: rgba($grey,.5);
+$hc-right-background-overlay: rgba($darkgrey,.5);
+$hc-header-left-background-color: rgba($blue,.75);
+$hc-header-middle-background-color: rgba($grey,.75);
+$hc-header-right-background-color: rgba($darkgrey,.75);
+
+
+//home additional content
+$hac-background-color: rgba($grey,.75);
+$hac-border-top: 4px solid $blue;
+$hac-header-color: $blue;
+$hac-image-border: none;//also applies to google map iframes in this section
+$hac-text-color: $blue;
+$hac-font-size: 18px;
+
+
+///////////////////////////////////////////
+////////////////SIDEBAR////////////////////
+//////////////////SIDEBAR//////////////////
+////////////////////SIDEBAR////////////////
+///////////////////////////////////////////
+//sidebar ($s)
+$s-header-color: $darkgrey;
+$s-link-color: $blue;
+$s-link-color-hover: $grey;
+$s-link-decoration-hover: underline; // either 'underline' or 'none'.
+
+
+
+//////////////////////////////////////////
+////////////////FOOTER////////////////////
+//////////////////FOOTER//////////////////
+////////////////////FOOTER////////////////
+//////////////////////////////////////////
+//footer ($ft)
+$ft-background-color: $blue;
+$ft-border-top: 3px solid $grey;
+$ft-h4-color: $white;
+$ft-h4-border-bottom: 2px solid $white;
+$ft-text-color: $white;
+$ft-text-color-hover: $grey;
+$ft-text-decoration-hover: none; // either 'underline' or 'none'.
+$footer-pad: 30px;//vertical padding on footer
+
+
+
+///////////////////////////////////////////
+////////////////CONTACT////////////////////
+//////////////////CONTACT//////////////////
+////////////////////CONTACT////////////////
+///////////////////////////////////////////
+$google-maps-border: 4px solid $blue;
+$form-border: 1px solid $blue;
+
+
+
+
+
+
+
+
+

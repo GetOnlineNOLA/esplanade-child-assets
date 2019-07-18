@@ -6,6 +6,11 @@ function gon_columns_hide_acf_fields(){ ?>
 
 <style type="text/css">
 
+/*gitenberg block edits*/
+.acf-field-5cc3652dd7594 *, .acf-field-5cc3652dd7594 {
+    padding: 1px!important;
+}
+
 
 
 .visible-6 .col3,

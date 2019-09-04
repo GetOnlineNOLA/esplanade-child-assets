@@ -1,5 +1,4 @@
--- phpMyAdmin SQ
-L Dump
+-- phpMyAdmin SQL Dump
 -- version 4.4.10
 -- http://www.phpmyadmin.net
 --
